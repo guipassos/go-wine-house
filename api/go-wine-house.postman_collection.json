@@ -82,6 +82,20 @@
 				"description": ""
 			},
 			"response": []
+		},
+		{
+			"name": "Delete Wine By Id",
+			"request": {
+				"url": "http://localhost:3000/wines/5",
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
 		}
 	]
 }
