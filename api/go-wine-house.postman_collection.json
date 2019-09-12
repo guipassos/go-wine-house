@@ -1,0 +1,87 @@
+{
+	"variables": [],
+	"info": {
+		"name": "go-wine-house",
+		"_postman_id": "2e477fa3-caff-3142-0cda-0cc4851abc21",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Wine",
+			"request": {
+				"url": "http://localhost:3000/wines",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Marcus James Merlot Demi-Sec Bag in Box 3000 mL\",\n\t\"brand\": \"Marcus James\",\n\t\"description\":\"Marcus James Merlot Demi-Sec Bag in Box 3000 mL é um vinho brasileiro produzido na região da Serra Gaúcha pela Vinícola Aurora. Elaborado pela variedade de uva Merlot, o Marcus James Merlot Demi-Sec Bag in Box 3000 mL possui em seu visual uma coloração vermelho rubi, aromas frutados e, paladar macio, agradável e aveludado.\",\n\t\"year\": 2014,\n\t\"country\":\"Brazil\",\n\t\"quantity\":50,\n\t\"status\": true\n}\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Wines",
+			"request": {
+				"url": "http://localhost:3000/wines",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Wine By Id",
+			"request": {
+				"url": "http://localhost:3000/wines/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Wine By Id",
+			"request": {
+				"url": "http://localhost:3000/wines/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Marcus James Merlot Demi-Sec Bag in Box 3000 mL\",\n\t\"brand\": \"Marcus James\",\n\t\"description\":\"Marcus James Merlot Demi-Sec Bag in Box 3000 mL é um vinho brasileiro produzido na região da Serra Gaúcha pela Vinícola Aurora. Elaborado pela variedade de uva Merlot, o Marcus James Merlot Demi-Sec Bag in Box 3000 mL possui em seu visual uma coloração vermelho rubi, aromas frutados e, paladar macio, agradável e aveludado.\",\n\t\"year\": 2015,\n\t\"country\":\"Brazil\",\n\t\"quantity\":20,\n\t\"status\": true\n}\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Enable or Disable Wine By Id",
+			"request": {
+				"url": "http://localhost:3000/wines/1/enable",
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
